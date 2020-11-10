@@ -1,0 +1,13 @@
+/* Banner */
+.jumbotron {
+  background-image: url("./images/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 700px;
+}
+
+.jumbotron p,
+.jumbotron h1 {
+  color: white;
+}

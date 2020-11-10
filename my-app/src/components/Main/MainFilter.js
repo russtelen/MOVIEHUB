@@ -4,7 +4,7 @@ class MainFilter extends Component {
   state = {};
   render() {
     return (
-      <div className="dropdown">
+      <div className="dropdown mb-4">
         <button
           className="btn btn-secondary dropdown-toggle"
           type="button"

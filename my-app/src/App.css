@@ -11,3 +11,20 @@
 .jumbotron h1 {
   color: white;
 }
+
+/* Movie Cards */
+.movie-image {
+  -webkit-box-shadow: 6px 14px 49px -20px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 14px 49px -20px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 14px 49px -20px rgba(0, 0, 0, 0.75);
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.movie-release-date {
+  font-size: 18px;
+  font-style: italic;
+}

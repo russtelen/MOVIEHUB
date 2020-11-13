@@ -1,83 +1,41 @@
 import React, { Component } from "react";
 import MainMovieItem from "./MainMovieItem";
 
+function displayMovie(movie) {
+  return (
+    <MainMovieItem
+      key={movie.id}
+      img={`http://image.tmdb.org/t/p/original/${movie.poster_path}`}
+      title={movie.title}
+      release={movie.release_date}
+    />
+  );
+}
+
 class MainMovies extends Component {
-  state = {};
+  state = {
+    movies: [],
+  };
+
+  componentDidMount() {
+    fetch("https://api.themoviedb.org/3/movie/popular?api_key=")
+      .then((res) => res.json())
+      .then((json) => {
+        console.log(json);
+        this.setState({
+          movies: json.results,
+        });
+      });
+  }
+
   render() {
+    const { movies } = this.state;
+
     return (
       <div className="container">
         <div className="row">
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
-
-          <MainMovieItem
-            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
-            title="Movie Title"
-            release="Release Date"
-          />
+          {movies.map(displayMovie)}
+          {/* {movies.forEach((m) => displayMovie(m))} */}
         </div>
       </div>
     );

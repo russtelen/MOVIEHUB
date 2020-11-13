@@ -17,6 +17,10 @@ body {
   color: white;
 }
 
+.jumbotron h1 {
+  font-size: 100px;
+}
+
 /* Movie Cards */
 .movie-image {
   -webkit-box-shadow: 6px 14px 49px -20px rgba(0, 0, 0, 0.75);

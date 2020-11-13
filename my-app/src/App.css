@@ -1,3 +1,8 @@
+/* Fonts */
+body {
+  font-family: "Bebas Neue", cursive !important;
+}
+
 /* Banner */
 .jumbotron {
   background-image: url("./images/banner.jpg");
@@ -20,7 +25,7 @@
 }
 
 .movie-title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
 }
 

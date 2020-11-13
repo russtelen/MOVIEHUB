@@ -16,6 +16,7 @@ function displayMovie(movie) {
 
 class MainMovies extends Component {
   state = {
+    isLoaded: false,
     movies: [],
   };
 
@@ -25,19 +26,24 @@ class MainMovies extends Component {
       .then((json) => {
         console.log(json);
         this.setState({
+          isLoaded: true,
           movies: json.results,
         });
       });
   }
 
   render() {
-    const { movies } = this.state;
+    const { isLoaded, movies } = this.state;
 
-    return (
-      <div className="container">
-        <div className="row">{movies.map(displayMovie)}</div>
-      </div>
-    );
+    if (!isLoaded) {
+      return <p> Page is Loading..</p>;
+    } else {
+      return (
+        <div className="container">
+          <div className="row">{movies.map(displayMovie)}</div>
+        </div>
+      );
+    }
   }
 }
 

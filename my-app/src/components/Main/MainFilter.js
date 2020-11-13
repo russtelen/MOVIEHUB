@@ -13,7 +13,7 @@ class MainFilter extends Component {
           aria-haspopup="true"
           aria-expanded="false"
         >
-          Highest Rated
+          Popular
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <a className="dropdown-item" href="index.html">

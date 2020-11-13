@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import MainMovieItem from "./MainMovieItem";
 
+const API_KEY = process.env.REACT_APP_API_KEY;
+
 function displayMovie(movie) {
   return (
     <MainMovieItem
@@ -18,7 +20,7 @@ class MainMovies extends Component {
   };
 
   componentDidMount() {
-    fetch("https://api.themoviedb.org/3/movie/popular?api_key=")
+    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
       .then((res) => res.json())
       .then((json) => {
         console.log(json);
@@ -33,10 +35,7 @@ class MainMovies extends Component {
 
     return (
       <div className="container">
-        <div className="row">
-          {movies.map(displayMovie)}
-          {/* {movies.forEach((m) => displayMovie(m))} */}
-        </div>
+        <div className="row">{movies.map(displayMovie)}</div>
       </div>
     );
   }

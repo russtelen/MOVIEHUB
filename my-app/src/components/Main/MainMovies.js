@@ -7,12 +7,77 @@ class MainMovies extends Component {
     return (
       <div className="container">
         <div className="row">
-          <MainMovieItem />
-          <MainMovieItem />
-          <MainMovieItem />
-          <MainMovieItem />
-          <MainMovieItem />
-          <MainMovieItem />
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
+
+          <MainMovieItem
+            img="https://1.bp.blogspot.com/-zXwrowTem0M/Xj3xuRee9SI/AAAAAAAABqQ/JKCg_K_ObTY26HhXI1JGcPtR5NLErWE8wCLcBGAsYHQ/s1600/sea-4810958_1280.jpg"
+            title="Movie Title"
+            release="Release Date"
+          />
         </div>
       </div>
     );

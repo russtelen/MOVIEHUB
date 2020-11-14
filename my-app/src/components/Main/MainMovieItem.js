@@ -25,7 +25,11 @@ class MainMovieItem extends Component {
             <p className="movie-release-date">
               Release Date: {this.props.release}
             </p>
-            <button className="btn btn-secondary">More Info</button>
+            <form action={this.props.fullPage}>
+              <button type="submit" className="btn btn-secondary">
+                More Info
+              </button>
+            </form>
           </div>
         </figure>
       </div>

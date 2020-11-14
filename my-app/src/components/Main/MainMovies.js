@@ -11,6 +11,7 @@ function displayMovie(movie) {
       title={movie.title}
       release={movie.release_date}
       overview={movie.overview}
+      fullPage={`https://www.themoviedb.org/movie/${movie.id}`}
     />
   );
 }

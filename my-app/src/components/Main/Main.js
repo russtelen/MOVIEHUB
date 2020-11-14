@@ -9,7 +9,12 @@ class Main extends Component {
       <div>
         <div className="container">
           <div className="text-center">
-            <h1 className="display-3">Movies</h1>
+            <h1
+              className="display-3"
+              uk-scrollspy="cls: uk-animation-slide-right; repeat: true"
+            >
+              Movies
+            </h1>
           </div>
 
           <div className="d-flex justify-content-end">

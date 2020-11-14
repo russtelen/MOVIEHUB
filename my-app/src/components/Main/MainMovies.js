@@ -33,6 +33,7 @@ class MainMovies extends Component {
   }
 
   render() {
+    //destructuring
     const { isLoaded, movies } = this.state;
 
     if (!isLoaded) {
@@ -40,7 +41,12 @@ class MainMovies extends Component {
     } else {
       return (
         <div className="container">
-          <div className="row">{movies.map(displayMovie)}</div>
+          <div
+            className="row"
+            uk-scrollspy="cls: uk-animation-slide-right; target: .movie-item; delay: 150; repeat: true"
+          >
+            {movies.map(displayMovie)}
+          </div>
         </div>
       );
     }

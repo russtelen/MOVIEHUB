@@ -12,37 +12,16 @@ class MainFilter extends Component {
 
   render() {
     return (
-      <div className="dropdown mb-4">
-      
-      <button
-          className="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Popular
-        </button> 
-       
-
-      <form onChange={(e) => this.handleFormChange(e)}>
-        <select className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <option value="popular" className="dropdown-item">
-            Popular
-          </option>
-          <option value="top_rated" className="dropdown-item">
-            Highest Rated
-          </option>
-          <option value="now_playing" className="dropdown-item">
-            Recently Released
-          </option>
-          <option value="upcoming" className="dropdown-item">
-            Coming Soon
-          </option>
-        </select>
-      </form>
-      <div/>
+      <div className="mb-4">
+        <form onChange={(e) => this.handleFormChange(e)}>
+          <select>
+            <option value="popular">Most Popular</option>
+            <option value="top_rated">Highest Rated</option>
+            <option value="now_playing">Recently Released</option>
+            <option value="upcoming">Coming Soon</option>
+          </select>
+        </form>
+      </div>
     );
   }
 }

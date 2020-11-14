@@ -34,7 +34,7 @@ class Nav extends Component {
               </a>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0">
+          {/* <form className="form-inline my-2 my-lg-0">
             <input
               className="form-control mr-sm-2"
               type="search"
@@ -47,7 +47,7 @@ class Nav extends Component {
             >
               Search
             </button>
-          </form>
+          </form> */}
         </div>
       </nav>
     );

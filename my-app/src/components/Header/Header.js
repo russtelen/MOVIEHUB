@@ -7,7 +7,7 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <Nav />
+        {/* <Nav /> */}
         <Banner />
       </React.Fragment>
     );

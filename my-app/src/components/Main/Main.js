@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import MainFilter from "./MainFilter";
 import MainMovies from "./MainMovies";
+import MainSearch from "./MainSearch";
 
 class Main extends Component {
   state = {
@@ -22,6 +23,7 @@ class Main extends Component {
             >
               Movies
             </h1>
+            <MainSearch />
           </div>
 
           <div className="d-flex justify-content-end">

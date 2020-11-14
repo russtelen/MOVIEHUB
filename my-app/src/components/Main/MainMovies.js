@@ -10,6 +10,7 @@ function displayMovie(movie) {
       img={`http://image.tmdb.org/t/p/original/${movie.poster_path}`}
       title={movie.title}
       release={movie.release_date}
+      overview={movie.overview}
     />
   );
 }

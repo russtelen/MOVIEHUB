@@ -3,7 +3,14 @@ import MainFilter from "./MainFilter";
 import MainMovies from "./MainMovies";
 
 class Main extends Component {
-  state = {};
+  state = {
+    filterUrl: "popular",
+  };
+
+  syncData = (childData) => {
+    this.setState({ filterUrl: childData });
+  };
+
   render() {
     return (
       <div>
@@ -18,12 +25,12 @@ class Main extends Component {
           </div>
 
           <div className="d-flex justify-content-end">
-            <MainFilter />
+            <MainFilter transferData={this.syncData} />
           </div>
         </div>
 
         <div className="movies">
-          <MainMovies />
+          <MainMovies filterUrl={this.state.filterUrl} />
         </div>
       </div>
     );

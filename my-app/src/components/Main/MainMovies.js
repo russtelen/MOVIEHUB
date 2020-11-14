@@ -23,10 +23,20 @@ class MainMovies extends Component {
   };
 
   componentDidMount() {
-    fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`)
+    this.updateMovies();
+  }
+
+  componentDidUpdate() {
+    this.updateMovies();
+  }
+
+  updateMovies() {
+    fetch(
+      `https://api.themoviedb.org/3/movie/${this.props.filterUrl}?api_key=${API_KEY}`
+    )
       .then((res) => res.json())
       .then((json) => {
-        console.log(json);
+        // console.log(json);
         this.setState({
           isLoaded: true,
           movies: json.results,

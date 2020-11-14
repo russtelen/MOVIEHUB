@@ -1,11 +1,20 @@
 import React, { Component } from "react";
 
 class MainFilter extends Component {
-  state = {};
+  state = {
+    filter: null,
+  };
+
+  handleFormChange = (e) => {
+    console.log(e.target.value);
+    this.props.transferData(e.target.value);
+  };
+
   render() {
     return (
       <div className="dropdown mb-4">
-        <button
+      
+      <button
           className="btn btn-secondary dropdown-toggle"
           type="button"
           id="dropdownMenuButton"
@@ -14,19 +23,26 @@ class MainFilter extends Component {
           aria-expanded="false"
         >
           Popular
-        </button>
-        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a className="dropdown-item" href="index.html">
+        </button> 
+       
+
+      <form onChange={(e) => this.handleFormChange(e)}>
+        <select className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <option value="popular" className="dropdown-item">
+            Popular
+          </option>
+          <option value="top_rated" className="dropdown-item">
             Highest Rated
-          </a>
-          <a className="dropdown-item" href="index.html">
+          </option>
+          <option value="now_playing" className="dropdown-item">
             Recently Released
-          </a>
-          <a className="dropdown-item" href="index.html">
+          </option>
+          <option value="upcoming" className="dropdown-item">
             Coming Soon
-          </a>
-        </div>
-      </div>
+          </option>
+        </select>
+      </form>
+      <div/>
     );
   }
 }

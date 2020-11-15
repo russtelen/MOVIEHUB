@@ -23,7 +23,6 @@ class Main extends Component {
             >
               Movies
             </h1>
-            <MainSearch />
           </div>
 
           <div className="d-flex justify-content-end">

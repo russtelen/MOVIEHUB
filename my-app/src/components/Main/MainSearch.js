@@ -3,13 +3,12 @@ import React, { Component } from "react";
 class MainSearch extends Component {
   state = {
     query: "",
-    results: [],
   };
 
-  handleSearch = (e) => {
-    e.preventDefault();
-    console.log(e.search);
-  };
+  //   handleSearch = (e) => {
+  //     e.preventDefault();
+  //     console.log(e.search);
+  //   };
 
   handleChange = () => {
     // console.log(this.search.value);
@@ -27,13 +26,13 @@ class MainSearch extends Component {
           ref={(input) => (this.search = input)}
           onChange={this.handleChange}
         />
-        <button
+        {/* <button
           onClick={(e) => this.handleSearch(e)}
           className="btn btn-outline-dark my-2 my-sm-0"
           type="submit"
         >
           Search
-        </button>
+        </button> */}
       </form>
     );
   }

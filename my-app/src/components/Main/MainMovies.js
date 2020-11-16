@@ -21,8 +21,6 @@ class MainMovies extends Component {
   state = {
     isLoaded: false,
     movies: [],
-    query: "",
-    results: [],
   };
 
   componentDidMount() {

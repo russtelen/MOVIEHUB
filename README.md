@@ -1,8 +1,6 @@
 # MovieHub
 
-## App Preview
-
-Try it out here ->[MovieHub](https://moviehub-russ.netlify.app/)
+### Try the app here: [MovieHub](https://moviehub-russ.netlify.app/)
 
 ## About
 

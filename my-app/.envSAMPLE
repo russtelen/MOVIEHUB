@@ -1,0 +1,6 @@
+1.) Make a duplicate of this file and rename it to .env
+2.) Insert API KEY  below
+
+//** DELETE EVERYTHING ABOVE THIS LINE INCLUDING THIS COMMENT ** //
+
+REACT_APP_API_KEY=(Insert your TheMovieDB API Key here)

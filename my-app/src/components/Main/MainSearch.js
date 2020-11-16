@@ -21,7 +21,7 @@ class MainSearch extends Component {
         <input
           className="form-control form-control-lg mr-sm-2 w-50"
           type="search"
-          placeholder="Search movie..."
+          placeholder="Search movie... (Not functioning yet)"
           aria-label="Search"
           ref={(input) => (this.search = input)}
           onChange={this.handleChange}

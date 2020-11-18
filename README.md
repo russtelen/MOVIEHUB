@@ -11,17 +11,12 @@ MovieHub is an app built with React that uses [The Movie DB API](https://develop
 - Search Function
 - Give user the ability to rate a film
 
-## Run
+## Run locally
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. cd my-app
+2. change .envSAMPLE to .env
+3. Open .env and paste TheMovieDb API key in: "REACT_APP_API_KEY"
+4. npm start
 
 ## Preview
 

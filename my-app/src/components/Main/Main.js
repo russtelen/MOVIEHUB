@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import MainFilter from "./MainFilter";
 import MainMovies from "./MainMovies";
-import MainSearch from "./MainSearch";
 
 class Main extends Component {
   state = {

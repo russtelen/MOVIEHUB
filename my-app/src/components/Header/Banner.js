@@ -8,9 +8,7 @@ class Banner extends Component {
           className="align-self-center"
           uk-scrollspy="cls:uk-animation-slide-bottom; repeat: true"
         >
-          <h1 className="text-center">
-            Movie<span className="hub mx-2">Hub</span>
-          </h1>
+          <h1 className="text-center">MovieHub</h1>
           <p className="lead text-center">
             Millions of movies, TV shows and people to discover. Explore now.
           </p>
